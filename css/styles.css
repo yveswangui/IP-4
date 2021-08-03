@@ -8,7 +8,8 @@ h1{
 .pizza-order{
     padding-left: 0px;
     border-right: 2px;
-    outline: auto black;
+    outline: auto rgb(49, 49, 49);
+    outline-width: 1px;
 
 }
 .form-group{
@@ -16,4 +17,7 @@ h1{
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+.location{
+    display: none;
 }
