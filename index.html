@@ -13,35 +13,51 @@
     <title>Pizza Project</title>
 </head>
 <body>
-    <h1>Galaxy Z Pizza</h1>
+    <h1>Pizza Galaxy</h1>
     <div class="container">
-        <form>
+        <form id="new-contact">
             <label for="new-customer-name">Tell us your name:</label>
             <input type="text" class="customer-name" id=" new-customer-name">
-            <div class="form-control">
+        
                 <div class="row">
                     <div class="col-md-5">
-                        <label for="">What is your preferred Pizza Size</label>
-                        <input type="text" class="pizza-size">
-                        <label for="">What kind of Toppings would you like?</label>
-                        <input type="text" class="pizza-toppings">
-                        <label for="">Tell us how you'd like your crust</label>
-                        <input type="text" class="pizza-crust">
-                        <label for="">How many pizzas would you like to order?</label>
-                        <input type="number" class="pizza-number">
+                        <div class="form-group">
+                            <label for="pizza-size">What is your preferred pizza Size</label>
+                            <input type="text" class="form-control" id="pizza-size">
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-toppings">What kind of Toppings would you like?</label>
+                            <input type="text" class="form-control" id="pizza-toppings">
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-crust">Tell us how you'd like your Crust</label>
+                            <input type="text"  class="form-control" id="pizza-crust">
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-order">How many pizzas would you like to order?</label>
+                            <input type="number" class="form-control" id="pizza-order">
+                        </div>
                     </div>
-                        <h4>Would you like your pizza delivered to you?</h4>
-                        <label class="radio">                    
-                            <input class="radio-one" type="radio" id="yes-deliver" name="delivery">
-                            <span class="checkmark"></span>
-                            Yes
-                        </label>
-                        <label class="radio">
-                            <input class="radio-two" type="radio" id="no-deliver" name="delivery">
-                            <span class="checkmark"></span>
-                            No
-                        </label>
-                    </div>
+                </div>
+                <div class="form-group">
+                    <h4>Would you like your pizza delivered to you?</h4>
+                    <label class="radio">                    
+                        <input class="radio-one" type="radio" id="yes-deliver" name="delivery">
+                        <span class="checkmark"></span>
+                        Yes
+                    </label>
+                    <label class="radio">
+                        <input class="radio-two" type="radio" id="no-deliver" name="delivery">
+                        <span class="checkmark"></span>
+                        No
+                    </label>
+                    <h5>If yes, give us your location</h5>
+                    <label for="">Street</label>
+                    <input type="text" class="new-street" id="">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                
             </div>
         </form>
 
