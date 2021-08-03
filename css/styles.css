@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+.form-control{
+    padding: 20px 20px 20px 20px;
+    margin: 30px;
+}
+.pizza-order{
+    padding-left: 0px;
+    border-right: 2px;
+    outline: auto black;
+
+}
+.form-group{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

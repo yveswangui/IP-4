@@ -54,7 +54,7 @@
                                 <option value="Pizza Bagels">Pizza Bagels</option>
                             </select>
                         </div>
-                        <h4>Are you vegeterian?</h4>
+                        <h5>Are you vegeterian?</h5>
                         <label class="radio">                    
                             <input class="radio-one" type="radio" id="vegeterian" name="food-preference">
                             <span class="checkmark"></span>
@@ -65,14 +65,15 @@
                             <span class="checkmark"></span>
                             No
                         </label>
+                        <p>(We will include vegeterian products if specified/ allergic to animal products)</p>
                         </div>
                             <div class="form-group">
                                 <label for="pizza-order">How many pizzas would you like to order?</label>
-                                <input type="number" class="form-control" id="pizza-order">
+                                <input type="number" class="pizza-order" id="pizza-number">
                             </div>
                         </div>
                     <div class="form-group">
-                        <h4>Would you like your pizza delivered to you?</h4>
+                        <h5>Would you like your pizza delivered to you?</h5>
                         <label class="radio">                    
                             <input class="radio-one" type="radio" id="yes-deliver" name="delivery">
                             <span class="checkmark"></span>
@@ -84,8 +85,21 @@
                             No
                         </label>
                         <h5>If yes, give us your location</h5>
+                        <label for="">Town</label>
+                        <select name="" id="new-town">
+                            <option value="town">Select Town</option>
+                            <option value="Nairobi">Nairobi</option>
+                            <option value="Westlands">Westlands</option>
+                            <option value="Kikuyu">Kikuyu</option>
+                            <option value="Parklands">Parklands</option>
+                            <option value="Karen">Karen</option>
+                            <option value="Kahawa">Kahawa</option>
+                            <option value="Starehe">Starehe</option>
+                            <option value="Embakasi">Embakasi</option>
+                            <option value="Roysambu">Roysambu</option>
+                        </select>
                         <label for="">Street</label>
-                        <input type="text" class="new-street" id="">
+                        <input type="text" class="street" id="new-street">
                     </div>
                 </div>
 
