@@ -15,7 +15,7 @@
 <body>
     <h1>Pizza Galaxy</h1>
     <div class="container">
-        <form id="new-contact">
+        <form id="new-order">
             <label for="new-customer-name">Tell us your name:</label>
             <input type="text" class="customer-name" id=" new-customer-name">
             <div class="form-control">
@@ -23,16 +23,16 @@
                     <div class="col-md-10">
                         <div class="form-group">
                             <label for="pizza-size">What is your preferred pizza Size</label>
-                            <select id="pizza-size">
+                            <select name="pizza-size" id="pizza-size">
                                 <option value="" selected disabled>--Select Size--</option>
-                                <option value="Big">Big</option>
+                                <option value="Large">Large</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Small">Small</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="pizza-toppings">What kind of Toppings would you like?</label>
-                            <select name="" id="pizza-toppings">
+                            <select name="pizza-toppings" id="pizza-toppings">
                                 <option value=""selected disabled>--Select Toppings--</option>
                                 <option value="Pepperoni">Pepperoni</option>
                                 <option value="Mushroom">Mushroom</option>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group">
                             <label for="pizza-crust">Tell us how you'd like your Crust</label>
-                            <select name="" id="pizza-crust">
+                            <select name="pizza-crust" id="pizza-crust">
                                 <option value="" selected disabled>--Select Crust--</option>
                                 <option value="Thin 'N' Crispy">Thin 'N' Crispy</option>
                                 <option value="Classic">Classic</option>
@@ -56,6 +56,7 @@
                                 <option value="Cheese Stuffed">Cheese Stuffed</option>
                                 <option value="Pizza Bagels">Pizza Bagels</option>
                                 <option value="Flat Bread">Flat Bread</option>
+                                </optgroup>
                             </select>
                         </div>
                         <h5>Are you vegeterian?</h5>
@@ -76,23 +77,23 @@
                                 <input type="number" class="pizza-order" id="pizza-number">
                             </div>
                         </div>
-                    <div class="form-group">
+                    <div class="delivery">
                         <h5>Would you like your pizza delivered to you?</h5>
                         <label class="radio">                    
-                            <input class="radio-one" type="radio" id="yes-deliver" name="delivery">
+                            <input class="radio-one" type="radio" id="yes-deliver" name="delivery" value="yes">
                             <span class="checkmark"></span>
                             Yes
                         </label>
                         <label class="radio">
-                            <input class="radio-two" type="radio" id="no-deliver" name="delivery">
+                            <input class="radio-two" type="radio" id="no-deliver" name="delivery" value="no">
                             <span class="checkmark"></span>
                             No
                         </label>
-                        <div class="location">
-                        <h5>If yes, give us your location</h5>
+                        <div class="location" id="location-info">
+                        <h5>Give us your location</h5>
                             <label for="">Town</label>
-                            <select name="" id="new-town">
-                                <option value="town">Select Town</option>
+                            <select name="towns" id="new-town">
+                                <option value="" selected disabled >--Select Town--</option>
                                 <option value="Nairobi">Nairobi</option>
                                 <option value="Westlands">Westlands</option>
                                 <option value="Kikuyu">Kikuyu</option>
@@ -109,7 +110,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-success">Order</button>
                 
             </div>
         </form>
