@@ -3,7 +3,12 @@ body{
     font-size: x-large;
 }
 h1{
+    padding-top: 50px;
     text-align: center;
+    font-weight: 1000;
+}
+h3{
+    font-weight: 900;
 }
 .form-control{
     padding: 20px 20px 20px 20px;
@@ -29,9 +34,10 @@ button{
     display: none;
 }
 .home{
-    background-image: url(../images/jakob-cotton-jniSTizOp40-unsplash.jpg);
+    background-image: url(../images/pranjall-kumar-oYkC51pOQBk-unsplash.jpg);
     text-align: center;
-    margin-top: 40px;
+    font-weight: 1000;
+    margin-top: 10px;
     margin-right: 40px;
     margin-bottom: 20px;
     margin-left: 40px;
@@ -40,10 +46,34 @@ button{
     background-size: cover;
     padding-top: 100px;
     padding-right: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
     padding-left: 50px;
     background-repeat: no-repeat;
-    color: aliceblue;
+    color: rgb(196, 191, 177);
     object-fit: contain;
 }
-
+.container-fluid{
+    width: 600px;
+    background-image: url(../images/kai-pilger-tL92LY152Sk-unsplash.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-right: 60px;
+}
+.menu{
+    text-align: center;
+}
+.row img{
+    width: 300px;
+}
+.delivery{
+    color: white;
+    text-align: center;
+}
+.customer-name{
+    margin-top: 30px;
+}
+.name{
+    font-size: medium;
+    color: white;
+}

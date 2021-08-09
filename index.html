@@ -17,18 +17,43 @@
     <title>Pizza Project</title>
 </head>
 <body>
-    <h1>PIZZA GALAXY</h1>
+    <h1>HOME</h1>
     <div class="home">
-        <h3>HOME</h3>
+        <h3>WELCOME TO PIZZA GALAXY</h3>
         <p> Your Pizza Out of This Planet!</p>
+        <p>Where your pizza dreams come true. Offering only the BEST.</p>
     </div>
-    <h3>MENU</h3>
+    <div class="menu">
+    <h1>MENU</h1>
     <p>Checkout our Pizza!</p>
-    <p>We have variety you can choose from</p>
-    <h3>ORDERS AND DELIVERY</h3>
-    <div class="container">
-        <form id="order">
-            <label for="new-customer-name">Tell us your name:</label>
+    <p>We have a variety you can choose from</p>
+        <div class="row my-row">
+            <div class="col-sm">
+                <img src="images/ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-sm">
+                <img src="images/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg" alt="">
+            </div>
+            <div class="col-sm">
+                <img src="images/miha-rekar-kWEkH7j3KNI-unsplash (1).jpg" alt="triangular orange pattern">
+            </div>
+        </div>
+        <div class="row my-row">
+            <div class="col-sm">
+                <img src="images/portfolio/work5.jpg" alt="">
+            </div>
+            <div class="col-sm">
+                <img src="images/portfolio/work6.jpg" alt="">
+            </div>
+            <div class="col-sm">
+                <img src="images/portfolio/work7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <h1>ORDERS & DELIVERY</h1>
+    <div class="container-fluid">
+        <form id="order" class="order-form">
+            <label for="new-customer-name" class="name">Tell us your name:</label>
             <input type="text" class="customer-name" id=" new-customer-name">
             <div class="form-control">
                 <div class="row">
@@ -99,7 +124,7 @@
                             <input class="radio-two" type="radio" id="no-deliver" name="delivery" value="no">
                             <span class="checkmark"></span>
                             No
-                        </label>
+                        </label><br>
                         <div class="location" id="location-info">
                         <h5>Give us your location</h5>
                             <label for="">Town</label>
@@ -119,16 +144,15 @@
                             <label for="">Street</label>
                             <input type="text" class="street" id="new-street">
                         </div>
+                        <button type="button" class="btn btn-success" id="submit">Order</button>
                     </div>
                 </div>
-
-                <button type="button" class="btn btn-success" id="submit">Order</button>
                 
             </div>
         </form>
 
     </div>
-    <h3>Contact Info & Location</h3>
+    <h1>Contact Info & Location</h1>
     
 </body>
 </html>
