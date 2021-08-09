@@ -29,9 +29,12 @@ h3{
 }
 button{
    align-content: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 .location{
     display: none;
+    font-size: medium;
 }
 .home{
     background-image: url(../images/pranjall-kumar-oYkC51pOQBk-unsplash.jpg);
