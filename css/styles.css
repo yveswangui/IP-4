@@ -78,3 +78,9 @@ button{
     font-size: medium;
     color: white;
 }
+.on-menu{
+    width: 50px;
+}
+.contact-info{
+    text-align: center;
+}
