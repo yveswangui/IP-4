@@ -16,12 +16,16 @@ $(document).ready(function(){
         $(".location").show();
     });
 });  
-$("#checkout").click(function(){
+$("#submit").click(function(){
     var size = $("#size option:selected").val();
     var toppings = $("#pizza-toppings option:selected").val();
-    console.log(size + toppings);
-    var total, myTotal;
-
+    var quantity = $("#quantity option:selected").val();
+    console.log(size);
+    
+    var order = (s,t,q,total) => {
+        return{s,t,q,total};
+    };
+    var total, myTotal
     switch(size){
         case size = "Small":
             total = 500;
@@ -97,5 +101,14 @@ $("#checkout").click(function(){
                     break;
     }
     break;
+
+    let myNewOrder = order(size,toppings,quantity,myTotal);
+    console.log(myNewOrder);
+
+    $('#list').text(" ");
+    $('#list').append("<br>" +" " + myNewOrder.s + "<br>" + "  toppings" +
+     myNewOrder.t +"<br>" +
+        myNewOrder.q +"<br>" +"number of pizza"+
+         myNewOrder.total + "<br><br>");
 
 });

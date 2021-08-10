@@ -28,28 +28,43 @@
     <p>Checkout our Pizza!</p>
     <p>We have a variety you can choose from</p>
         <div class="row my-row">
-            <div class="col-sm">
+            <div class="col-sm-6">
                 <img src="images/ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="" class="img-responsive">
                 <div class="content"> 
-
+                    <p>Thin 'N' Crispy crust topped with Beef and Pepperoni</p>   
                 </div>
             </div>
-            <div class="col-sm">
-                <img src="images/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="images/getulio-moraes-Wz3u9_GtkWc-unsplash.jpg" alt="" class="">
+            <div class="col-sm-6">
+                <img src="images/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="" class="img-responsive">
+                <div class="content">
+                    <p>Classic BBQ Chicken</p>
             </div>
         </div>
+            <div class="row my-row">
+            <div class="col-sm-6">
+                <img src="images/getulio-moraes-Wz3u9_GtkWc-unsplash.jpg" alt="" class="img=responsive">
+                <div class="content">
+                    <p>Gluten Free Black Olives with Pepperoni</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/food-photographer-david-fedulov-Xt84tIHbjRY-unsplash.jpg" alt=""class="img-responsive">
+                <div class="content">
+                    <p>Cheese Stuffed Bufallo Chicken</p>
+                </div>
+        </div>
         <div class="row my-row">
-            <div class="col-sm">
-                <img src="images/food-photographer-david-fedulov-Xt84tIHbjRY-unsplash.jpg" alt="">
+            <div class="col-sm-6">
+                <img src="images/faizan-saeed-mwYTNZO0WhA-unsplash.jpg" alt=""class="img-responsive">
+                <div class="content">
+                    <p>Garlic and Parmesean Coated Chicken with Pineapple</p>
+                </div>
             </div>
-            <div class="col-sm">
-                <img src="images/faizan-saeed-mwYTNZO0WhA-unsplash.jpg" alt="">
+            <div class="col-sm-6">
+                <img src="images/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt=""class="img-responsive">
+            <div class="content">
+                <p>Flat Bread Spinach with Mozzarella</p>
             </div>
-            <div class="col-sm">
-                <img src="images/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt="">
             </div>
         </div>
     </div>
@@ -115,8 +130,8 @@
                         </label>
                         <p>(We will include vegeterian products if specified/ allergic to animal products)</p>
 
-                    <label for="quantity">How many Pizzas would you like to order? </label>
-                        <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">
+                        <label for="quantity">How many Pizzas would you like to order? </label>
+                            <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">
                     </div>
                         </div>
                     <div class="delivery">
@@ -156,6 +171,14 @@
                 
             </div>
         </form>
+
+    </div>
+    <div class="new-order" id="made-order">
+        <h4 class="text-center" id="summary">Your order</h4>
+        <h5 class="text-center summary"> This is what you ordered</h5>
+        <ol id="new-list" class="text-center sum">
+
+        </ol>
 
     </div>
     <div class="contact-info">

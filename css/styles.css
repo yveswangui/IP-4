@@ -52,7 +52,7 @@ button{
     padding-bottom: 250px;
     padding-left: 50px;
     background-repeat: no-repeat;
-    color: rgb(196, 191, 177);
+    color: rgb(247, 245, 242);
     object-fit: contain;
 }
 .container-fluid{
@@ -87,3 +87,4 @@ button{
 .contact-info{
     text-align: center;
 }
+
