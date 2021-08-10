@@ -67,8 +67,9 @@ button{
     text-align: center;
 }
 .row img{
-    width: 400px;
-    padding-bottom: 40px;
+    width: 410px;
+    padding-bottom: 25px;
+    height: 320px;
 }
 .delivery{
     color: white;
@@ -87,4 +88,92 @@ button{
 .contact-info{
     text-align: center;
 }
+.col-sm-6{
+    position: relative;
+}
+.content-1,.content-2,.content-3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 125px;
+    width: 60%;
+    height: 92%;
+    color: white;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.content-1:hover{
+    opacity: 1;
+}
+.content-2:hover{
+    opacity: 1;
+}
+.content-3:hover{
+    opacity:1;
 
+}
+.content-6{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 115px;
+    width: 410px;
+    height: 92%;
+    color: white;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.content-6:hover{
+    opacity: 1;
+}
+.content-5{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 115px;
+    width: 410px;
+    height: 92%;
+    color: white;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.content-5:hover{
+    opacity: 1;
+}
+.content-4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 120px;
+    width: 410px;
+    height: 92%;
+    color: white;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+.content-4:hover{
+    opacity: 1;
+}
+.content-4:hover > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+.content-4:hover > * {
+    transform: translateY(0)
+}
