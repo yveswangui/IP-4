@@ -70,6 +70,7 @@ button{
     width: 410px;
     padding-bottom: 25px;
     height: 320px;
+    padding-left: 30px;
 }
 .delivery{
     color: white;
@@ -91,15 +92,15 @@ button{
 .col-sm-6{
     position: relative;
 }
-.content-1,.content-2,.content-3{
+.content-1,.content-2{
     position: absolute;
     top: 0;
     bottom: 0;
-    margin-left: 125px;
-    width: 60%;
+    margin-left: 155px;
+    width: 385px;
     height: 92%;
     color: white;
-    background: rgb(0,0,0,0.6);
+    background: rgb(0,0,0,0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,11 +121,11 @@ button{
     position: absolute;
     top: 0;
     bottom: 0;
-    margin-left: 115px;
-    width: 410px;
+    margin-left: 90px;
+    width: 380px;
     height: 92%;
     color: white;
-    background: rgb(0,0,0,0.6);
+    background: rgba(209, 100, 100, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,12 +139,12 @@ button{
     position: absolute;
     top: 0;
     bottom: 0;
-    margin-left: 115px;
-    width: 410px;
+    margin-left: 90px;
+    width: 405px;
     height: 92%;
     color: white;
-    background: rgb(0,0,0,0.6);
-    display: flex;
+    background: rgb(0,0,0,0.7);
+    display:block;
     flex-direction: column;
     justify-content: center;
     opacity: 0;
@@ -152,15 +153,15 @@ button{
 .content-5:hover{
     opacity: 1;
 }
-.content-4{
+.content-4,.content-3{
     position: absolute;
     top: 0;
     bottom: 0;
-    margin-left: 120px;
-    width: 410px;
+    margin-left: 90px;
+    width: 380px;
     height: 92%;
     color: white;
-    background: rgb(0,0,0,0.6);
+    background: rgb(0,0,0,0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
