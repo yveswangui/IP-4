@@ -2,6 +2,9 @@
 function Customer(cName) {
     this.customerName = cName;
 }
+function Quantity(pNumber) {
+    this.pizzaNumber = pNumber;
+}
 
 
 
@@ -9,7 +12,6 @@ function Customer(cName) {
 
 
 //user-interface logic
-
 
 
 $(document).ready(function () {
@@ -32,6 +34,11 @@ $(document).ready(function () {
         $("#p-crust").change(function () {
             $(this).find(':selected').data('crust');
         });
+    });    
+        $("#location-info").click(function(){
+            $("#location-info").change(function(){
+                alert($(this).find(':selected').data('location'));
+            })
     });
 })
 
@@ -61,8 +68,9 @@ $(document).ready(function () {
                                     $(".towns").change(function (event) {
                                         $(".towns").each(function () {
                                             var finalCharges = orderTotal + parseInt($(this).val())
-                                            //console.log(finalCharges)
-                                            //alert("We got your order, your charges will be " + finalCharges)
+                                            $("#submit").click(function () {
+                                                alert("We got your order, total cost will be " + "Ksh." + finalCharges + " . Your pizza will be delivered to you in 20 minutes.")
+                                            
                                                 })
                                             });
                                         });
@@ -74,6 +82,9 @@ $(document).ready(function () {
                 });
             });
         });
+
+    });
+
    
 $(document).ready(function () {
 
@@ -111,11 +122,9 @@ $(document).ready(function () {
 $(document).ready(function(){
         $("#check-order").click(function(event){
             var inputtedName = $("input#new-customer-name").val();
-
             var newCustomer = new Customer(inputtedName)
-
             $("ul#contacts").append("<li><span class='contact'>" + newCustomer.customerName +"</span></li>")
-
+        
             $("input#new-customer-name").val("");
 
         });
@@ -124,8 +133,21 @@ $(document).ready(function(){
             $("#made-order h3").text(newCustomer.customerName);
             $(".new-customer-name").text(newCustomer.customerName);
             
-        });  
+        }); 
+        $("#check-order").click(function(event){
+            var inputtedNumber = $("input#quantity").val();
+            var newNumber = new Quantity(inputtedNumber)
+            $("ul#contacts").append("<li><span class='contact'>" + newNumber.pizzaNumber + "</span></li>")
+            $("input#quantity").val("")
+        })
+        $("#check-order").last().click(function(event) {
+            $("#made-order").show();
+            $("#made-order h3").text(newNumber,pizzaNumber);
+            //$(".new-customer-name").text(newCustomer.customerName);
+            $(".form-quantity").text(newNumber,pizzaNumber);
+            
     });
+});
 
  //$(document).ready(function(){
 // document.querySelector('select').onchange = function(){

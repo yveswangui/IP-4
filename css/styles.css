@@ -137,3 +137,6 @@ button{
 .contact:hover {
     text-decoration: underline;
 }
+#contacts{
+    text-align: center;
+}
