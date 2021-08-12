@@ -1,6 +1,6 @@
 //business logic
-function Customer(name) {
-    this.customerName = name;
+function Customer(cName) {
+    this.customerName = cName;
 }
 
 
@@ -9,6 +9,9 @@ function Customer(name) {
 
 
 //user-interface logic
+
+
+
 $(document).ready(function () {
     $('input[type = "radio"]#no-deliver').click(function () {
         $(".location").hide();
@@ -17,20 +20,20 @@ $(document).ready(function () {
         $(".location").show();
     });
 })
-
 $(document).ready(function () {
     $("#check-order").click(function(){
     $("#p-size").change(function () {
-        alert($(this).find(':selected').data('size'));
+     $(this).find(':selected').data('size');
     });
-});
-    $("#pizza-toppings").change(function () {
-        alert($(this).find(':selected').data('topping'));
+
+    $("#p-toppings").change(function () {
+        $(this).find(':selected').data('topping');
     });
-        $("#pizza-crust").change(function () {
-            alert($(this).find(':selected').data('crust'))
+        $("#p-crust").change(function () {
+            $(this).find(':selected').data('crust');
         });
     });
+})
 
 
 
@@ -54,19 +57,15 @@ $(document).ready(function () {
                             $(".form-quantity").change(function (event) {
                                 $(".form-quantity").each(function () {
                                     var orderTotal = crustTotal * parseInt($(this).val())
-
                                     //$('input[type = "radio"]#yes-deliver').click(function () {               
                                     $(".towns").change(function (event) {
                                         $(".towns").each(function () {
                                             var finalCharges = orderTotal + parseInt($(this).val())
                                             //console.log(finalCharges)
                                             //alert("We got your order, your charges will be " + finalCharges)
-
-                                            $("#submit").click(function () {
-                                                alert("We got your order, total cost will be " + "Ksh." + finalCharges + " . Your pizza will be delivered to you in 20 minutes.")
+                                                })
                                             });
                                         });
-
                                     });
                                 });
                             });
@@ -75,8 +74,7 @@ $(document).ready(function () {
                 });
             });
         });
-    });
-});
+   
 $(document).ready(function () {
 
     $(".pizza-size").change(function (event) {
@@ -88,7 +86,7 @@ $(document).ready(function () {
                 $(".pizza-toppings").each(function () {
                     var toppingsTotal = total + parseInt($(this).val())
 
-                    $(".pizza-crust").change(function (event) {
+                   $(".pizza-crust").change(function (event) {
                         $(".pizza-crust").each(function () {
                             var crustTotal = toppingsTotal + parseInt($(this).val())
 
@@ -98,18 +96,41 @@ $(document).ready(function () {
 
                                     $('input[type = "radio"]#no-deliver').click(function () {
                                         $("#submit").click(function () {
-                                            alert("We got your order, total cost will be " + "Ksh." + orderTotal + " . Ready for pick-up in 15 min")
+                                            alert("We got your order, total cost will be " + "Ksh." + orderTotal + " . Ready for pick-up in 15 min. ThankYou!")
                                         });
                                     });
                                 });
                             });
                         });
-                    });
+                   });
                 });
             });
         });
     });
 });
-$(document).ready(function () {
+$(document).ready(function(){
+        $("#check-order").click(function(event){
+            var inputtedName = $("input#new-customer-name").val();
 
-})
+            var newCustomer = new Customer(inputtedName)
+
+            $("ul#contacts").append("<li><span class='contact'>" + newCustomer.customerName +"</span></li>")
+
+            $("input#new-customer-name").val("");
+
+        });
+        $("#check-order").last().click(function(event) {
+            $("#made-order").show();
+            $("#made-order h3").text(newCustomer.customerName);
+            $(".new-customer-name").text(newCustomer.customerName);
+            
+        });  
+    });
+
+ //$(document).ready(function(){
+// document.querySelector('select').onchange = function(){
+    // alert(this.selectedOptions[0].getAttribute('data-attr'))
+// }
+//})
+
+

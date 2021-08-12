@@ -96,17 +96,17 @@
                             <label for="pizza-size">What is your preferred pizza Size</label>
                             <select name="pizza-size" id="p-size" class="pizza-size">
                                 <option value="" selected disabled>--Select Size--</option>
-                                <option value="800" data-size="Large - Ksh.800">Large</option>
-                                <option value="550" data-size="Medium - Ksh.550">Medium</option>
-                                <option value="400" data-size="Small - Ksh.400">Small</option>
+                                <option value="800"  data-size="Large - Ksh.800">Large</option>
+                                <option value="550"  data-size="Medium - Ksh.550">Medium</option>
+                                <option value="400"  data-size="Small - Ksh.400">Small</option>
                             </select>
 
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="pizza-toppings">What kind of Toppings would you like?</label>
-                            <select name="pizza-toppings" id="pizza-toppings" class="pizza-toppings">
-                                <option value=""selected disabled>--Select Toppings--</option>
+                            <select name="pizza-topping" id="p-toppings" class="pizza-toppings">
+                                <option value="selected disabled">--Select Toppings--</option>
                                 <option value="90" data-topping="Bacon - Ksh.90" >Bacon</option>
                                 <option value="105"data-topping="BBQ Chicken - Ksh.105">BBQ Chicken</option>
                                 <option value="80" data-topping="Beef with Green Pepper - Ksh.80">Beef with Green Pepper</option>
@@ -119,9 +119,10 @@
                                 <option value="90" data-topping="Spinach with Mozarella - Ksh.95">Spinach with Mozzarella</option>
                             </select>
                         </div>
+                        <span id="result"></span>
                         <div class="form-group">
                             <label for="pizza-crust">Tell us how you'd like your Crust</label>
-                            <select name="pizza-crust" class ="pizza-crust" id="pizza-crust">
+                            <select name="pizza-crust" class ="pizza-crust" id="p-crust">
                                 <option value="" selected disabled>--Select Crust--</option>
                                 <option value="70" data-crust="Thin 'N' Crispy - Ksh.70">Thin 'N' Crispy</option>
                                 <option value="80" data-crust="Classic - Ksh.80">Classic</option>
@@ -181,10 +182,11 @@
                             <label for="">Street</label>
                             <input type="text" class="street" id="new-street">
                         </div>
-                        <button type="submit" class="btn btn-success" id="submit">Order</button>
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-info" id="check-order">Check my Order</button><br>
-                        <input class="reset" type="reset" value="reset">
+                        <button type="button" class="btn btn-info" id="check-order">Check my Order</button>
+                        <input class="button" type="reset" value="reset"><br>
+                        <button type="submit" class="btn btn-success" id="submit">Order</button>
+                        
                     </div>
                 </div>
                 
@@ -193,10 +195,9 @@
 
     </div>
     <div class="new-order" id="made-order">
-        <ul id="new-list" class="new-order-list">
-            <h4 class="order-text" id="summary">Your order</h4>
-
-            <p>Name: <span class = "add-name"></span></p>
+    <h3 class="order-text" id="summary">Your order</h4>
+        <ul id="contacts">
+            <p><span class="new-name"></span></p>
         </ul>
 
     </div>
