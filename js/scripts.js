@@ -34,13 +34,15 @@ $(document).ready(function () {
         $("#p-crust").change(function () {
             $(this).find(':selected').data('crust');
         });
-    });    
-        $("#location-info").click(function(){
-            $("#location-info").change(function(){
-                alert($(this).find(':selected').data('location'));
-            })
+            
     });
+});
+$(document).ready(function(){
+    $("#location-info").change(function(){
+        alert($(this).find(':selected').data('location'));
+    })
 })
+
 
 
 
@@ -69,7 +71,7 @@ $(document).ready(function () {
                                         $(".towns").each(function () {
                                             var finalCharges = orderTotal + parseInt($(this).val())
                                             $("#submit").click(function () {
-                                                alert("We got your order, total cost will be " + "Ksh." + finalCharges + " . Your pizza will be delivered to you in 20 minutes.")
+                                                alert("We got your order, total cost will be " + "Ksh." + finalCharges + " . Delivery will be in 20 minutes.")
                                             
                                                 })
                                             });
