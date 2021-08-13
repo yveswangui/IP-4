@@ -42,6 +42,13 @@ $(document).ready(function(){
         alert($(this).find(':selected').data('location'));
     })
 })
+$(document).ready(function(){
+    $(".menu-button").click(function(){
+        //$(".unstyled-1").show()
+        $(".hidden-list").slideDown()
+    });
+});
+$(document)
 
 
 
