@@ -132,7 +132,7 @@ button{
 }
 .contact{
     cursor: pointer;
-    color: blue;
+    color: rgb(238, 64, 41);
 }
 .contact:hover {
     text-decoration: underline;

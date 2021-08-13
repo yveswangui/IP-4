@@ -136,19 +136,6 @@ $(document).ready(function(){
             $(".new-customer-name").text(newCustomer.customerName);
             
         }); 
-        $("#check-order").click(function(event){
-            var inputtedNumber = $("input#quantity").val();
-            var newNumber = new Quantity(inputtedNumber)
-            $("ul#contacts").append("<li><span class='contact'>" + newNumber.pizzaNumber + "</span></li>")
-            $("input#quantity").val("")
-        })
-        $("#check-order").last().click(function(event) {
-            $("#made-order").show();
-            $("#made-order h3").text(newNumber,pizzaNumber);
-            //$(".new-customer-name").text(newCustomer.customerName);
-            $(".form-quantity").text(newNumber,pizzaNumber);
-            
-    });
 });
 
  //$(document).ready(function(){
