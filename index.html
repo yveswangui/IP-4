@@ -18,6 +18,7 @@
     <title>Pizza Project</title>
 </head>
 <body>
+    <!----home-->
     <h1>HOME</h1>
     <div class="home">
         <h3>WELCOME TO PIZZA GALAXY</h3>
@@ -27,9 +28,11 @@
     <div class="menu">
     <h1>MENU</h1>
     <p>Checkout our Pizza!</p>
-    <p>We have a variety you can choose from</p>
+    <p>We have a variety you can choose from.<br> Click below to see our Menu.</p>
     </div>
     <button class="menu-button"id="m-button">See our Menu</button>
+    
+    <!---Menu list--->
     <div class="container">  
         <div class="hidden-list">
             <div class="row">
@@ -71,6 +74,8 @@
             </div>
         </div>
     </div>
+    
+    <!----menu images---->
     <div class="container">
         <div class="row my-row">
             <div class="col-sm">
@@ -127,12 +132,14 @@
 </div>
 </div>
 </div>
-
+    
     <h1>ORDERS & DELIVERY</h1>
     <div class="container-fluid">
         <form id="order" class="order-form">
             <label for="new-customer-name" class="name">Tell us your name:</label>
             <input type="text" class="customer-name" id="new-customer-name">
+            
+            <!----Size select options---->
             <div class="form-control">
                 <div class="row">
                     <div class="col-md-10">
@@ -144,9 +151,11 @@
                                 <option value="medium">Medium</option>
                                 <option value="small">Small</option>
                             </select>
-
                             </div>
                         </div>
+                
+
+                        <!----Toppings select Options----->
                         <div class="form-group">
                             <label for="pizza-toppings">What kind of Toppings would you like?</label>
                             <select name="pizza-topping" id="toppings" class="pizza-toppings">
@@ -164,6 +173,8 @@
                             </select>
                         </div>
                         <span id="result"></span>
+
+                        <!----Crust select options----->
                         <div class="form-group">
                             <label for="pizza-crust">Tell us how you'd like your Crust</label>
                             <select name="pizza-crust" class ="pizza-crust" id="crust">
@@ -178,7 +189,7 @@
                                 </optgroup>
                             </select>
                         </div>
-                        <h5>Are you vegeterian?</h5>
+                        <h4>Are you vegeterian?</h4>
                         <label class="radio">                    
                             <input class="radio-one" type="radio" id="vegeterian" name="food-preference">
                             <span class="checkmark"></span>
@@ -190,62 +201,55 @@
                             No
                         </label>
                         <p>(We will include vegeterian products if specified/ allergic to animal products)</p>
-
-                        <label for="quantity">How many Pizzas would you like to order? </label>
-                            <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">
-                        </div>
                     </div>
-                    <div class="delivery">
-                        <h5>Would you like your pizza delivered to you?</h5>
-                        <label class="radio">                    
-                            <input class="radio-one" type="radio" id="yes-deliver" name="delivery" value="yes">
-                            <span class="checkmark"></span>
-                            Yes
-                        </label>
-                        <label class="radio">
-                            <input class="radio-two" type="radio" id="no-deliver" name="delivery" value="no">
-                            <span class="checkmark"></span>
-                            No
-                        </label><br>
-                        <div class="location" id="location-info">
-                        <h5>Give us your location</h5>
-                            <label for="">Town</label>
-                            <select name="towns" id="new-town" class="towns">
-                                <option value="" selected disabled >--Select Town--</option>
-                                <option value="50" data-location="CBD-Ksh.50">CBD</option>
-                                <option value="60" data-location="Eastleigh-Ksh.60">Eastleigh</option>
-                                <option value="200" data-location="Kahawa-Ksh.200">Kahawa</option>
-                                <option value="150" data-location="Karen-Ksh.150">Karen</option>
-                                <option value="150" data-location="Kasarani-Ksh.150">Kasarani</option>
-                                <option value="200" data-location="Kikuyu-Ksh.200">Kikuyu</option>
-                                <option value="100" data-location="Ngong-Ksh.100">Ngong</option>
-                                <option value="70" data-location="Parklands-Ksh.70">Parklands</option>
-                                <option value="150" data-location="Roysambu-Ksh.150">Roysambu</option>
-                                <option value="50" data-location="Starehe-Ksh.50">Starehe</option>
-                                <option value="70" data-location="Westlands-Ksh.70">Westlands</option>
-                            </select><br>
-                            <label for="">Street</label>
-                            <input type="text" class="street" id="new-street">
-                        </div>
+                </div>
+                    <!-----Buttons------>
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-info" id="check-order">Check my Order</button>
+                        <button type="button" class="btn btn-info" id="check-order">Add Order</button>
                         <input class="button-reset" type="reset" value="reset"><br>
-                        <button type="submit" class="btn btn-success" id="submit">Order</button> 
+                        
+                        <!--<label for="quantity">How many Pizzas would you like to order? </label>
+                        <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">-->
+                    
+
+                        <!----Delivery---->
+                <div class="delivery">
+                    <h5>Would you like your pizza delivered to you?</h5>
+                    <label class="radio">                    
+                        <input class="radio-one" type="radio" id="yes-deliver" name="delivery" value="yes">
+                        <span class="checkmark"></span>
+                        Yes
+                    </label>
+                    <label class="radio">
+                        <input class="radio-two" type="radio" id="no-deliver" name="delivery" value="no">
+                        <span class="checkmark"></span>
+                        No
+                    </label><br>
+                    <div class="location" id="location-info">
+                    <h5>Give us your location</h5>
+                        <label for="">Town</label>
+                        <select name="towns" id="deliver" class="towns">
+                            <option value="" selected disabled >--Select Town--</option>
+                            <option value="50" data-location="CBD-Ksh.50">CBD</option>
+                            <option value="60" data-location="Eastleigh-Ksh.60">Eastleigh</option>
+                            <option value="200" data-location="Kahawa-Ksh.200">Kahawa</option>
+                            <option value="150" data-location="Karen-Ksh.150">Karen</option>
+                            <option value="150" data-location="Kasarani-Ksh.150">Kasarani</option>
+                            <option value="200" data-location="Kikuyu-Ksh.200">Kikuyu</option>
+                            <option value="100" data-location="Ngong-Ksh.100">Ngong</option>
+                            <option value="70" data-location="Parklands-Ksh.70">Parklands</option>
+                            <option value="150" data-location="Roysambu-Ksh.150">Roysambu</option>
+                            <option value="50" data-location="Starehe-Ksh.50">Starehe</option>
+                            <option value="70" data-location="Westlands-Ksh.70">Westlands</option>
+                        </select><br>
+                        <label for="">Street</label>
+                        <input type="text" class="street" id="new-street">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="submit">Order</button>
                     </div>
                 </div> 
             </div>
         </form>
-    </div>
-    <div class="new-order" id="made-order">
-    <h3 class="order-text" id="summary">Here's your order</h4>
-        <ul id="contacts">
-            <p>Hi,</p>
-            <p><span class="new-name"></span></p>
-        </ul>
-        <ul id="numbers">
-            <p><span class="new-number"></span></p>
-
-        </ul>
     </div>
     <div class="contact-info">
         <h1>Contact Info & Location</h1>
