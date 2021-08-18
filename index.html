@@ -205,7 +205,7 @@
                 </div>
                     <!-----Buttons------>
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-info" id="check-order">Add Order</button>
+                        <button type="button" class="btn btn-info" id="check-order" onClick="document.location.reload(true)">Add Order</button>
                         <input class="button-reset" type="reset" value="reset"><br>
                         
                         <!--<label for="quantity">How many Pizzas would you like to order? </label>
@@ -245,12 +245,23 @@
                         <label for="">Street</label>
                         <input type="text" class="street" id="new-street">
                         </div>
-                        <button type="submit" class="btn btn-success" id="submit">Order</button>
+                        <button type="button" class="btn btn-success" id="submit">Order</button>
                     </div>
                 </div> 
             </div>
         </form>
     </div>
+
+
+    <!-----Order Listing---->
+
+    <ul id="pizza-message">
+        <li>
+
+        </li>
+    </ul>
+
+
     <div class="contact-info">
         <h1>Contact Info & Location</h1>
         <h3>Want to visit?</h3>
