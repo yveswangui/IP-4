@@ -201,19 +201,20 @@
                             No
                         </label>
                         <p>(We will include vegeterian products if specified/ allergic to animal products)</p>
+                        <label for="quantity">How many Pizzas would you like to order? </label>
+                        <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">
                     </div>
                 </div>
                     <!-----Buttons------>
+                    <div class="buttons">
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-info" id="check-order">Add Order</button>
-                        <input class="button-reset" type="reset" value="reset"><br>
+                        <button type="button" class="btn btn-info" id="add-order">Add Order</button>
+                        <button type="button" class= "btn btn-danger" id="complete-order">Done with my Order!</button>
                         
-                        <!--<label for="quantity">How many Pizzas would you like to order? </label>
-                        <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">-->
-                    
+                    </div>
 
                         <!----Delivery---->
-                <div class="delivery">
+                <div class="delivery" id="order-delivery">
                     <h5>Would you like your pizza delivered to you?</h5>
                     <label class="radio">                    
                         <input class="radio-one" type="radio" id="yes-deliver" name="delivery" value="yes">
@@ -245,7 +246,7 @@
                         <label for="">Street</label>
                         <input type="text" class="street" id="new-street">
                         </div>
-                        <button type="submit" class="btn btn-success" id="submit">Order</button>
+                        <button type="submit" class="btn btn-success" id="submit">Checkout</button>
                     </div>
                 </div> 
             </div>
