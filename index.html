@@ -21,9 +21,9 @@
     <!----home-->
     <h1>HOME</h1>
     <div class="home">
-        <h3>WELCOME TO PIZZA GALAXY</h3>
-        <p> Your Pizza Out of This Planet!</p>
-        <p>Where your pizza dreams come true. Offering only the BEST.</p>
+        <h3>P!ZZAZZ</h3>
+        <p> Home of the pizza that gives you a buzz in every slice.</p>
+        
     </div>
     <div class="menu">
     <h1>MENU</h1>
@@ -98,8 +98,8 @@
         <div class="card">
             <img src="images/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt=""class="img-responsive-6">
             <div class="content-1 overlayLeft">
-        <div class="text">Flat Bread Spinach with Mozzarella</div>
-                </div>
+                <div class="text">Flat Bread Spinach with Mozzarella</div>
+            </div>
             </div>
         </div>
     </div>
@@ -137,7 +137,7 @@
     <div class="container-fluid">
         <form id="order" class="order-form">
             <label for="new-customer-name" class="name">Tell us your name:</label>
-            <input type="text" class="customer-name" id="new-customer-name">
+            <input type="text" class="customer-name" id="new-customer-name" required>
             
             <!----Size select options---->
             <div class="form-control">
@@ -160,16 +160,16 @@
                             <label for="pizza-toppings">What kind of Toppings would you like?</label>
                             <select name="pizza-topping" id="toppings" class="pizza-toppings">
                                 <option value="selected disabled">--Select Toppings--</option>
-                                <option value="Bacon" >Bacon</option>
-                                <option value="BBQ Chicken">BBQ Chicken</option>
-                                <option value="Beef with Green Pepper" >Beef with Green Pepper</option>
-                                <option value="Beef with Pepperoni" >Beef with Pepperoni</option>
-                                <option value="Black Olives with Pepperoni" >Black Olives with Pepperoni</option>
-                                <option value="Bufallo Chicken" >Buffallo Chicken</option>
-                                <option value="Chicken with Pineapple" >Chicken with Pineapple</option>
-                                <option value="Extra Cheese" >Extra Cheese</option>
-                                <option value="Mushroom" >Mushroom</option>
-                                <option value="Spinach with Mozarella" >Spinach with Mozzarella</option>
+                                <option value="bacon" >Bacon</option>
+                                <option value="bbq">BBQ Chicken</option>
+                                <option value="greenpepper" >Beef with Green Pepper</option>
+                                <option value="pepperonibeef" >Beef with Pepperoni</option>
+                                <option value="blackolives" >Black Olives with Pepperoni</option>
+                                <option value="bufallo" >Buffallo Chicken</option>
+                                <option value="pineapple" >Chicken with Pineapple</option>
+                                <option value="cheesy" >Extra Cheese</option>
+                                <option value="mushroom" >Mushroom</option>
+                                <option value="mozarella" >Spinach with Mozzarella</option>
                             </select>
                         </div>
                         <span id="result"></span>
@@ -179,17 +179,17 @@
                             <label for="pizza-crust">Tell us how you'd like your Crust</label>
                             <select name="pizza-crust" class ="pizza-crust" id="crust">
                                 <option value="" selected disabled>--Select Crust--</option>
-                                <option value="Thin 'N' Crispy">Thin 'N' Crispy</option>
-                                <option value="Classic">Classic</option>
-                                <option value="Gluten Free">Gluten Free</option>
-                                <option value="Garlic and Parmesean Coated">Garlic and Parmesean Coated</option>
-                                <option value="Cheese Stuffed">Cheese Stuffed</option>
-                                <option value="Pizza Bagels">Pizza Bagels</option>
-                                <option value="Flat Bread">Flat Bread</option>
-                                </optgroup>
+                                <option value="thin">Thin 'N' Crispy</option>
+                                <option value="classic">Classic</option>
+                                <option value="gfree">Gluten Free</option>
+                                <option value="garlic">Garlic and Parmesean Coated</option>
+                                <option value="cheese">Cheese Stuffed</option>
+                                <option value="bagels">Pizza Bagels</option>
+                                <option value="flat">Flat Bread</option>
+                                
                             </select>
                         </div>
-                        <h4>Are you vegeterian?</h4>
+                        <h4>Do you want a vegan pizza?</h4>
                         <label class="radio">                    
                             <input class="radio-one" type="radio" id="vegeterian" name="food-preference">
                             <span class="checkmark"></span>
@@ -205,13 +205,13 @@
                 </div>
                     <!-----Buttons------>
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-info" id="check-order" onClick="document.location.reload(true)">Add Order</button>
-                        <input class="button-reset" type="reset" value="reset"><br>
+                        <button type="button" class="btn btn-warning" id="check-order" onClick="document.location.reload(true)">Add Pizza</button>
+                        
                         
                         <!--<label for="quantity">How many Pizzas would you like to order? </label>
                         <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">-->
                     
-
+                        <button type="button" class="btn btn-success" id="submit">CHECKOUT</button>
                         <!----Delivery---->
                 <div class="delivery">
                     <h5>Would you like your pizza delivered to you?</h5>
@@ -230,22 +230,22 @@
                         <label for="">Town</label>
                         <select name="towns" id="deliver" class="towns">
                             <option value="" selected disabled >--Select Town--</option>
-                            <option value="50" data-location="CBD-Ksh.50">CBD</option>
-                            <option value="60" data-location="Eastleigh-Ksh.60">Eastleigh</option>
-                            <option value="200" data-location="Kahawa-Ksh.200">Kahawa</option>
-                            <option value="150" data-location="Karen-Ksh.150">Karen</option>
-                            <option value="150" data-location="Kasarani-Ksh.150">Kasarani</option>
-                            <option value="200" data-location="Kikuyu-Ksh.200">Kikuyu</option>
-                            <option value="100" data-location="Ngong-Ksh.100">Ngong</option>
-                            <option value="70" data-location="Parklands-Ksh.70">Parklands</option>
-                            <option value="150" data-location="Roysambu-Ksh.150">Roysambu</option>
-                            <option value="50" data-location="Starehe-Ksh.50">Starehe</option>
-                            <option value="70" data-location="Westlands-Ksh.70">Westlands</option>
+                            <option value="cbd" >CBD</option>
+                            <option value="east" >Eastleigh</option>
+                            <option value="kaha" >Kahawa</option>
+                            <option value="kar" >Karen</option>
+                            <option value="kas" >Kasarani</option>
+                            <option value="kik" >Kikuyu</option>
+                            <option value="ngo" >Ngong</option>
+                            <option value="park" >Parklands</option>
+                            <option value="roys">Roysambu</option>
+                            <option value="star" >Starehe</option>
+                            <option value="west" >Westlands</option>
                         </select><br>
                         <label for="">Street</label>
                         <input type="text" class="street" id="new-street">
                         </div>
-                        <button type="button" class="btn btn-success" id="submit">Order</button>
+                        
                     </div>
                 </div> 
             </div>
@@ -267,7 +267,7 @@
         <h3>Want to visit?</h3>
         <p>We are located at BushHill House along Kina Road.<br>Open Monday to Sunday from 8:00 am - 11:00 pm</p>
         <h3>Our Address</h3>
-        <p>Pizza Galaxy, P.O Box 22341, OakWell<br>Tel/Fax: 999334526/5<br>Email: pizzagalaxy@yahoo.co.ke</p>
+        <p>Pizzazz, P.O Box 22341, OakWell<br>Tel/Fax: 999334526/5<br>Email: pizzazz@yahoo.co.uk</p>
     </div>
     
 </body>
