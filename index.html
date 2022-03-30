@@ -158,18 +158,18 @@
                         <!----Toppings select Options----->
                         <div class="form-group">
                             <label for="pizza-toppings">What kind of Toppings would you like?</label>
-                            <select name="pizza-topping" id="toppings" class="pizza-toppings">
-                                <option value="selected disabled">--Select Toppings--</option>
-                                <option value="bacon" >Bacon</option>
-                                <option value="bbq">BBQ Chicken</option>
-                                <option value="greenpepper" >Beef with Green Pepper</option>
-                                <option value="pepperonibeef" >Beef with Pepperoni</option>
-                                <option value="blackolives" >Black Olives with Pepperoni</option>
-                                <option value="bufallo" >Buffallo Chicken</option>
-                                <option value="pineapple" >Chicken with Pineapple</option>
-                                <option value="cheesy" >Extra Cheese</option>
-                                <option value="mushroom" >Mushroom</option>
-                                <option value="mozarella" >Spinach with Mozzarella</option>
+                            <select name="pizza-topping" id="toppings" class="pizza-toppings" >
+                                <option value=" "selected disabled>--Select Toppings--</option>
+                                <option value="Bacon" >Bacon</option>
+                                <option value="BBQ Chicken">BBQ Chicken</option>
+                                <option value="Beef with Green Pepper" >Beef with Green Pepper</option>
+                                <option value="Beef with Pepperoni" >Beef with Pepperoni</option>
+                                <option value="Black Olives with pepperoni" >Black Olives with Pepperoni</option>
+                                <option value="Buffallo Chicken" >Buffallo Chicken</option>
+                                <option value="Chicken with Pineapple" >Chicken with Pineapple</option>
+                                <option value="Extra Cheese" >Extra Cheese</option>
+                                <option value="Mushroom" >Mushroom</option>
+                                <option value="Spinach with Mozzarella" >Spinach with Mozzarella</option>
                             </select>
                         </div>
                         <span id="result"></span>
@@ -179,13 +179,13 @@
                             <label for="pizza-crust">Tell us how you'd like your Crust</label>
                             <select name="pizza-crust" class ="pizza-crust" id="crust">
                                 <option value="" selected disabled>--Select Crust--</option>
-                                <option value="thin">Thin 'N' Crispy</option>
-                                <option value="classic">Classic</option>
-                                <option value="gfree">Gluten Free</option>
-                                <option value="garlic">Garlic and Parmesean Coated</option>
-                                <option value="cheese">Cheese Stuffed</option>
-                                <option value="bagels">Pizza Bagels</option>
-                                <option value="flat">Flat Bread</option>
+                                <option value="Thin 'N' Crispy">Thin 'N' Crispy</option>
+                                <option value="Classic">Classic</option>
+                                <option value="Gluten Free">Gluten Free</option>
+                                <option value="Garlic and Parmesean Coated">Garlic and Parmesean Coated</option>
+                                <option value="Cheese Stuffed">Cheese Stuffed</option>
+                                <option value="Pizza Bagels">Pizza Bagels</option>
+                                <option value="Flat Bread">Flat Bread</option>
                                 
                             </select>
                         </div>
@@ -205,13 +205,13 @@
                 </div>
                     <!-----Buttons------>
                         <h5>Not yet satisfied?</h5>
-                        <button type="button" class="btn btn-warning" id="check-order" onClick="document.location.reload(true)">Add Pizza</button>
+                        <button type="button" class="btn btn-warning" id="addpizza">Add Pizza</button>
                         
                         
                         <!--<label for="quantity">How many Pizzas would you like to order? </label>
                         <input type="number" class="form-quantity" id="quantity" placeholder="Pizza Number" min="1">-->
                     
-                        <button type="button" class="btn btn-success" id="submit">CHECKOUT</button>
+                        <button type="button" class="btn btn-success" id="checkout">CHECKOUT</button>
                         <!----Delivery---->
                 <div class="delivery">
                     <h5>Would you like your pizza delivered to you?</h5>
