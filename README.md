@@ -6,17 +6,8 @@ This project will enable users to purchase their order, calculate the price for 
 ## Setup/Installation Requirements
 Open terminal.
 Initialize git.
-Git clone <https://github.com/yvonnewangui/ip-4.git>
+Git clone <https://github.com/yveswangui/ip-4.git>
 
-## BDD
-| Behavior  |      Input       |  Output
-|-------------|----------------|---------------|
-|Calculation of the prices for each of the options selected|Click Select Options|List appears for you to choose|
-|Total calculation of the prices|Click on check-order|An alert message for the total order|
-## Known Bugs
-* Order cannot be calculated if the user places the order in another way from how they are arranged.
-* Total display for the order is not visible.
-* Check-order button displays multiple times.
 ## Technologies Used
 * HTML
 * CSS 
